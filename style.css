@@ -320,11 +320,11 @@ body {
   justify-content: center;
 }
 
-.contact-links span a {
+.contact-links div a {
   color: #525f7f;
 }
 
-.contact-links span::after {
+.contact-links div::after {
   content: "||";
 
   color: #525f7f;
@@ -333,7 +333,7 @@ body {
 
 }
 
-.contact-links span:nth-child(3)::after {
+.contact-links div:nth-child(3)::after {
   content: "";
   margin: 0;
 }
@@ -373,7 +373,16 @@ body {
   #name-title {
     font-size: 2.5rem;
   }
-  #contact-links {
-    word-wrap: break-word;
+  .contact-links {
+    display: flex;
+    flex-direction: column ;
   }
+  .contact-links div {
+    padding-top: 10px;
+  }
+  .contact-links div::after {
+    content: none;
+  
+  }
+  
 }
