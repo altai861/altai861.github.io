@@ -19,6 +19,29 @@ body {
   padding: 50px 200px;
 }
 
+@media(max-width: 767px) {
+  #home-container {
+    padding: 20px 20px;
+  }
+  #navbar {
+    justify-content: center;
+    width: 75%;
+  }
+  img {
+    display: none;
+  }
+  .project-background{
+    display: none;
+  }
+  .project-card {
+    padding: 0;
+  }
+
+  #name-title {
+    font-size: 10px;
+  }
+}
+
 #navbar {
   text-align: right;
   font-size: larger;
@@ -70,11 +93,12 @@ body {
 
 #name-title {
   padding: 50px 0px;
-  font-size: 4.5rem;
+  font-size: 4.3rem;
   color: #747fe0;
   display: flex;
   align-items: center;
 }
+
 
 .blink-span {
   display: inline-block;
